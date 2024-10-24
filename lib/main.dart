@@ -175,6 +175,7 @@ class TopPage extends ConsumerWidget {
                     child: Center(
                       child: TextButton(
                         onPressed: () {
+                          // ignore: unused_result
                           ref.refresh(weatherProvider); // Reloadボタンで再取得
                         },
                         child: Text(
@@ -210,6 +211,7 @@ class TopPage extends ConsumerWidget {
         TextButton(
           child: const Text('Retry'),
           onPressed: () {
+            // ignore: unused_result
             ref.refresh(weatherProvider); // Reloadボタンで再取得
             Navigator.pushReplacement(
               context,
